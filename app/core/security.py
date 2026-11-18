@@ -15,4 +15,4 @@ def verify_token(token : str):
         payload = jwt.decode(token , settings.JWT_SECRET_KEY, algorithms = [settings.JWT_ALGORTIHM])
         return payload
     except JWTError:
-        pass    
+        return None
