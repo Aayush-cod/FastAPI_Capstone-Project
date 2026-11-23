@@ -15,3 +15,5 @@ def get_cached_prediction(key: str):
 
 def set_cached_prediction(key: str, value: dict, expiry: int = 3600):
     redis_client.setex(key,expiry, json.dumps(value))
+
+
