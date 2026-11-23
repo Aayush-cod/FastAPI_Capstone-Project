@@ -7,7 +7,7 @@ python-dotenv==1.0.1
 scikit-learn==1.9.1
 joblib
 pandas
-numpy==1.26.4
+numpy
 
 redis==5.0.4
 
